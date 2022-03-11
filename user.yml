@@ -1,0 +1,45 @@
+paths:
+  Users:
+    parameters:
+      - $ref: 'parameters.yaml#/components/parameters/Version'
+      - $ref: 'parameters.yaml#/components/parameters/OrganizationId'
+    post:
+      summary: Creates a user
+      security:
+        - BearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                data:
+                  $ref: '#/components/schemas/User'
+      responses:
+        '201':
+          description: Created
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    $ref: '#/components/schemas/User'
+        '400':
+          $ref: 'global.yaml#/components/responses/BadRequest'
+        '403':
+          $ref: 'global.yaml#/components/responses/Forbidden'
+      tags:
+        - Organizations
+
+components:
+  schemas:
+    User:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        name:
+          type: string

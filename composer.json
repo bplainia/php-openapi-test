@@ -1,0 +1,11 @@
+{
+    "name": "php-openapi-test",
+    "description": "Test to try to break php-openapi",
+    "scripts": {
+        "build": "php-openapi inline api.yml compiled.yml",
+        "validate": "php-openapi validate compiled.yml"
+    },
+    "require": {
+        "cebe/php-openapi": "^1.6"
+    }
+}
