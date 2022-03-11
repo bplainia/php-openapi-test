@@ -17,3 +17,12 @@ components:
         type: string
         format: uuid
       description: The Organization ID
+  responses:
+    BadRequest:
+      description: Bad Request
+    Forbidden:
+      description: Forbidden
+    NotFound:
+      description: Not Found
+    Success:
+      description: Success

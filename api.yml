@@ -14,3 +14,5 @@ servers:
 paths: 
   /v1/organizations/{organizationId}/user:
     $ref: 'user.yml#/paths/Users'
+  /v1/organizations/{organizationId}/user/{id}:
+    $ref: 'user.yml#/paths/UserId'

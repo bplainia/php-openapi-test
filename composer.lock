@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "db8991ea77adee1ffe6e4547f8e7327f",
+    "content-hash": "a83091ce23adb3c087a1aa3bb970f449",
     "packages": [
         {
             "name": "cebe/php-openapi",
-            "version": "1.6.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cebe/php-openapi.git",
-                "reference": "8bbbcf1aa3314c535ac315bcd4286ca9cded8a8a"
+                "reference": "2224846f00177c3c2c02fab6cebab18b7c005b20"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cebe/php-openapi/zipball/8bbbcf1aa3314c535ac315bcd4286ca9cded8a8a",
-                "reference": "8bbbcf1aa3314c535ac315bcd4286ca9cded8a8a",
+                "url": "https://api.github.com/repos/cebe/php-openapi/zipball/2224846f00177c3c2c02fab6cebab18b7c005b20",
+                "reference": "2224846f00177c3c2c02fab6cebab18b7c005b20",
                 "shasum": ""
             },
             "require": {
@@ -38,6 +38,7 @@
                 "phpstan/phpstan": "^0.12.0",
                 "phpunit/phpunit": "^6.5 || ^7.5 || ^8.5 || ^9.4"
             },
+            "default-branch": true,
             "bin": [
                 "bin/php-openapi"
             ],
@@ -73,7 +74,7 @@
                 "issues": "https://github.com/cebe/php-openapi/issues",
                 "source": "https://github.com/cebe/php-openapi"
             },
-            "time": "2022-02-10T09:44:31+00:00"
+            "time": "2022-02-28T02:57:02+00:00"
         },
         {
             "name": "justinrainbow/json-schema",
@@ -373,7 +374,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "cebe/php-openapi": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
