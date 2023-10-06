@@ -12,8 +12,6 @@ servers:
     description: 'Test'
 
 paths: 
-  /v1/health:
-    $ref: "health.yml#/paths/Health"
   /v1/organizations/{organizationId}/user:
     $ref: 'user.yml#/paths/Users'
   /v1/organizations/{organizationId}/user/{id}:
